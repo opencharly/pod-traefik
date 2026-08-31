@@ -1,7 +1,7 @@
 version: 2026.232.0520
 traefik:
     candy:
-        version: 2026.167.1315
+        version: 2026.243.0100
         description: |
             Reverse proxy with TLS termination, HTTP-to-HTTPS redirect, and dynamic file-provider routing
             traefik downloads the pinned v3.4.0 release binary to /usr/local/bin/traefik
@@ -11,7 +11,7 @@ traefik:
             dynamic-provider directory at /etc/traefik/dynamic. It runs as a supervisord
             service, so every install artifact and the live API are independently verifiable.
         require:
-            - '@github.com/opencharly/layer-supervisord:v2026.235.2056'
+            - '@github.com/opencharly/layer-supervisord:v2026.240.0121'
         var:
             TRAEFIK_VERSION: v3.4.0
         port:
